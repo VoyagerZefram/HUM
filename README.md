@@ -144,15 +144,10 @@ flowchart TB
 
 ### 🧠 Embedding 设计（阶段一）
 
-* 使用**可复现的随机向量**作为占位 embedding
-* 通过 `fileId` 生成固定随机种子
-* 保证：
-
-  * 可替换真实模型
-  * 不影响现有数据结构
+* 使用**CODEC**模型进行encoder编码
 
 ```python
-def generate_random_embedding(file_id: str, dimension: int = 256):
+def generate_embedding(file_id: str, dimension: int = 256):
     seed = hash(file_id) % (2**32)
     np.random.seed(seed)
     vector = np.random.normal(0, 1, dimension)
