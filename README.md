@@ -1,4 +1,4 @@
-````markdown
+
 # 🎙 Voices — 情感人格化语音平台  
 **Where voices are not just heard, but remembered.**
 
@@ -262,4 +262,4 @@ EMBEDDING_DIMENSION=256
 
 ```
 ```
->>>>>>> e8548398ef89955d6656af77ab63fdb59e16ed33
+
