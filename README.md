@@ -163,6 +163,8 @@ def generate_embedding(file_id: str, dimension: int = 256):
 
 ### 🔊 音色复刻 & TTS
 
+<img width="767" height="179" alt="image" src="https://github.com/user-attachments/assets/1519662f-0e68-4296-b819-8b84de9bd76c" />
+
 * 统一封装 StepFun API
 * 支持多模型切换（step-tts-2 / vivid / audio）
 * 音频生成与使用量统计解耦
